@@ -7,8 +7,8 @@ def length_primes(num):
     primes = [2,3]
     x = 5
     while x <= num:
-        for i in range(1, len(primes)):
-            if x % primes[i] == 0:
+        for i in primes:
+            if x % i == 0:
                 x += 2
                 break
         else:
